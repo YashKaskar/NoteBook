@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-     <h1>NoteBook Pack</h1>
+     <h1 className="note">NoteBook Pack</h1>
     </>
   )
 }
