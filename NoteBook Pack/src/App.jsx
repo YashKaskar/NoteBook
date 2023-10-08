@@ -1,10 +1,11 @@
+import Header from "./Header/Header"
 
 function App() {
   
 
   return (
     <>
-     <h1 className="note">NoteBook Pack</h1>
+    <Header />
     </>
   )
 }
