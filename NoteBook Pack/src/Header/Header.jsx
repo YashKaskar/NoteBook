@@ -1,12 +1,12 @@
 import React from 'react'
 import logo from '../assets/logo.svg'
-import './Header.css'
+
 
 const Header = () => {
   return (  
     <>
-      <div className='logo'>  
-      <img src={logo} alt="logo"  className='img'/> 
+      <div className='bg-[#ffea92] flex justify-center'>  
+      <img src={logo} alt="logo"  className='w-[13%] bg-[#ffea92]'/> 
      </div>
       
     </>
