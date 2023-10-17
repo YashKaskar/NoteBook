@@ -1,5 +1,6 @@
 import Header from "./Header/Header"
-import MainContent from "./MainContent/content"
+import ContentContainer from './MainContent/ContentContainer/ContentContainer';
+
 
 function App() {
   
@@ -7,7 +8,7 @@ function App() {
   return (
     <>
       <Header />
-      <MainContent />
+      <ContentContainer /> 
     </>
   )
 }
