@@ -4,7 +4,9 @@ import Content from '../Content/Content'
 const ContentContainer = () => {
   return (
     <div>
-      <Content />
+      <Content note={{
+          time: "4.24"
+      }} />
     </div>
   )
 }
