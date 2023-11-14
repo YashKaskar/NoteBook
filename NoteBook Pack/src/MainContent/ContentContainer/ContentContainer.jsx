@@ -17,7 +17,6 @@ const ContentContainer = () => {
       <Content note={{
           time: "4.24"
         }} />
-       
       </div>
     </div>
   )
