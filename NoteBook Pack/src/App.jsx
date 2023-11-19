@@ -1,14 +1,16 @@
+import React, { useState } from 'react'
 import Header from "./Header/Header"
 import "./App.css";
 
 import ContentContainer from './MainContent/ContentContainer/ContentContainer';
 import UpperBar from './MainContent/UpperBar/UpperBar';
+import { useState } from "react";
 
 
 
 function App() {
   
-  const note = [
+  const [note, setNote] = useState([
       {
       text: 'Yash',
       time: '3.00',
@@ -29,12 +31,22 @@ function App() {
       time: '11.00',
       color:'grey'
       }
-  ]
+  ])
+
+  const add = (color) => {  
+    const notes = [...note];
+    notes.push({
+      text: "",
+      time: Date.now(),
+      color,
+    });
+    setNote = (notes);
+  }
 
   return (
     <>
       <Header />
-      <UpperBar />
+      <UpperBar add={add} />
       <ContentContainer note={note} /> 
     </>
   )

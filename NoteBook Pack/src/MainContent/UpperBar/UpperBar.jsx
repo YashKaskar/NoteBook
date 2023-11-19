@@ -16,7 +16,8 @@ const UpperBar = () => {
             <li
               key={index}
               className='rounded-full h-[33px] w-[33px] gap-4 '
-              style={{backgroundColor: item}}
+              style={{ backgroundColor: item }}
+              onClick={()=> props.add(item)}
             />
         ))}
         
